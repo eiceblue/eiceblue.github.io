@@ -1,4 +1,4 @@
-﻿@charset "UTF-8";
+@charset "UTF-8";
 @font-face {
 	font-family: 'HelveticaNeue-Thin';
 	/*src: url('../fonts/helveticaneue-thin.eot') format('embedded-opentype');*/
@@ -95,11 +95,11 @@ hr{border-top: thin #c8c8c8;border-left:thin #c8c8c8;}
 .content_button_PDF{background-color:#db4444}
 
 
-.content_Word{padding-top:20px;padding-left:40px;float:left}
+.content_Word{padding-top:20px;padding-left:45px;float:left}
 .content_button_Word{background-color:#446ab2}
 
 
-.content_Excel{padding-top:20px;padding-left:40px;float:left}
+.content_Excel{padding-top:20px;padding-left:45px;float:left}
 .content_button_Excel{background-color:#27c253}
 
 
@@ -107,11 +107,11 @@ hr{border-top: thin #c8c8c8;border-left:thin #c8c8c8;}
 .content_button_ppt{background-color:#8b8fab}
 
 
-.content_em{padding-top:20px;padding-left:40px;float:left}
+.content_em{padding-top:20px;padding-left:45px;float:left}
 .content_button_em{background-color:#4C543C}
 
 
-.content_bc{padding-top:20px;padding-left:40px;float:left}
+.content_bc{padding-top:20px;padding-left:45px;float:left}
 .content_button_bc{background-color:orange}
 
 
