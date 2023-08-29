@@ -22,266 +22,50 @@
 	<link rel="stylesheet" href="css/fetch_1.css" type="text/css"/>
 	<link rel="apple-touch-icon" href="https://cdn.e-iceblue.com/templates/yoo_air/apple_touch_icon.png"/>
 	<link rel="stylesheet" href="css/test.css" type="text/css"/>
+
+        <script src="picture/jquery-3.7.1.min.js">
+        </script>
+
+    <script type="text/javascript" src="picture/js_for_menu.js"></script>
+    <link rel="stylesheet" href="picture/css_for_menu.css" type="text/css">
+
 </head>
-<style>
-    #content span .content_git{
-        padding-top: 20px;
-        padding-left: 0px;
-        float: left;
-        padding-right: 45px;
-    }
-    #content span .content_git:nth-child(3n){
-        padding-right: 0px;
-    }
-	    #page-footer{
-        position: relative;
-        width: 100%;
-    }
-    #page-footer .wrapper{
-        display: flex;
-        position: relative;
-        text-align: center;
-        margin: 0 auto;
-    }
-    #page-footer .wrapper #bottom2{
-        margin: 0 auto;
-        padding-top: 20px;
-    }
-    #bottom2 ul li{
-        margin-left: 0px;
-        padding: 0 40px;
-    }
-    #footer{
-        padding-top: 20px;
-    }
-</style>
+
 <body id="page" class="yoopage  column-right   style-turquoise menubar-glass background-glitter font-lucida ">
 <div id="toolbar">
     <div class="wrapper" style="width: 1140px;">
         <div class="logo"><a href="https://www.e-iceblue.com/" alt=".NET components E-iceblue"><span title="Home"></span></a></div>
         <ul id="menu">
-            <li class="mi211"><a class="box1">.NET</a>
-
-                <div class="dropdown box2" >
-
-                    <div class="column">
-                        <div class="separator">.NET Components</div>
-                        <ul>
-                            <li class="mi163"><a href="https://www.e-iceblue.com/Introduce/spire-office-for-net.html">Spire.Office for .NET</a>
-                            </li>
-                            <li class="mi356"><a href="https://www.e-iceblue.com/Introduce/spire-office-viewer-net.html">Spire.OfficeViewer for
-                                .NET</a></li>
-                            <li class="mi132"><a href="https://www.e-iceblue.com/Introduce/word-for-net-introduce.html">Spire.Doc for .NET</a>
-                            </li>
-                            <li class="mi209"><a href="https://www.e-iceblue.com/Introduce/word-viewer-net-introduce.html">Spire.DocViewer for
-                                .NET</a></li>
-                            <li class="mi133"><a href="https://www.e-iceblue.com/Introduce/excel-for-net-introduce.html">Spire.XLS for .NET</a>
-                            </li>
-                            <li class="mi347"><a href="https://www.e-iceblue.com/Introduce/spreadsheet-for-net.html">Spire.Spreadsheet for
-                                .NET</a></li>
-                            <li class="mi329"><a href="https://www.e-iceblue.com/Introduce/presentation-for-net-introduce.html">Spire.Presentation
-                                for .NET</a></li>
-                            <li class="mi130"><a href="https://www.e-iceblue.com/Introduce/pdf-for-net-introduce.html">Spire.PDF for .NET</a>
-                            </li>
-                            <li class="mi179"><a href="https://www.e-iceblue.com/Introduce/pdf-viewer.html">Spire.PDFViewer for .NET</a></li>
-                            <li class="mi344"><a href="https://www.e-iceblue.com/Introduce/pdf-viewer-asp.html">Spire.PDFViewer for ASP.NET</a>
-                            </li>
-                            <li class="mi134"><a href="https://www.e-iceblue.com/Introduce/data-export-for-net-intro.html">Spire.DataExport for
-                                .NET</a></li>
-                            <li class="mi358"><a href="https://www.e-iceblue.com/Introduce/barcode-for-net.html">Spire.Barcode for .NET</a></li>
-                            <li class="mi376"><a href="https://www.e-iceblue.com/Introduce/email-for-net.html">Spire.Email for .NET</a></li>
-                            <li class="mi376"><a href="https://www.e-iceblue.com/Introduce/ocr-for-net.html">Spire.OCR for .NET</a></li>
-                        </ul>
-
-                    </div>
-
-                    <div class="column right">
-
-                        <div class="separator">Free Products</div>
-                        <ul>
-                            <li class="mi374"><a href="https://www.e-iceblue.com/Introduce/spire-office-for-net-free.html">Free Spire.Office for
-                                .NET</a></li>
-                            <li class="mi320"><a href="https://www.e-iceblue.com/Introduce/free-doc-component.html">Free Spire.Doc for .NET</a>
-                            </li>
-                            <li class="mi339"><a href="https://www.e-iceblue.com/Introduce/free-word-viewer-net.html">Free Spire.DocViewer</a>
-                            </li>
-                            <li class="mi323"><a href="https://www.e-iceblue.com/Introduce/free-xls-component.html">Free Spire.XLS for .NET</a>
-                            </li>
-                            <li class="mi333"><a href="https://www.e-iceblue.com/Introduce/free-presentation-component.html">Free
-                                Spire.Presentation</a></li>
-                            <li class="mi322"><a href="https://www.e-iceblue.com/Introduce/free-pdf-component.html">Free Spire.PDF for .NET</a>
-                            </li>
-                            <li class="mi340"><a href="https://www.e-iceblue.com/Introduce/free-pdf-viewer-net.html">Free Spire.PDFViewer</a>
-                            </li>
-                            <li class="mi174"><a href="https://www.e-iceblue.com/Introduce/freepdfconverter.html">Free Spire.PDFConverter</a>
-                            </li>
-                            <li class="mi135"><a href="https://www.e-iceblue.com/Introduce/free-dataexport-component.html">Free
-                                Spire.DataExport</a></li>
-                            <li class="mi298"><a href="https://www.e-iceblue.com/Introduce/barcode-for-net-introduce.html">Free Spire.Barcode for
-                                .NET</a></li>
-                        </ul>
-
-                    </div>
+            <li class="mi211">
+                <a>products</a>
 
 
-                    <div class="column right">
-
-                        <div class="separator">WPF APIs</div>
-                        <ul>
-                            <li class="mi573"><a href="https://www.e-iceblue.com/Introduce/spire-office-for-wpf.html">Spire.Office for WPF</a></li>
-                            <li class="mi574"><a href="https://www.e-iceblue.com/Introduce/word-for-wpf-introduce.html">Spire.Doc for WPF</a></li>
-                            <li class="mi575"><a href="https://www.e-iceblue.com/Introduce/word-viewer-wpf-introduce.html">Spire.DocViewer for WPF</a></li>
-                            <li class="mi576"><a href="https://www.e-iceblue.com/Introduce/excel-for-wpf-introduce.html">Spire.XLS for WPF</a></li>
-                            <li class="mi577"><a href="https://www.e-iceblue.com/Introduce/pdf-for-wpf-introduce.html">Spire.PDF for WPF</a></li>
-                            <li class="mi578"><a href="https://www.e-iceblue.com/Introduce/pdf-viewer-wpf.html">Spire.PDFViewer for WPF</a></li>
-                        </ul>
-
-                    </div>
-
-                </div>
             </li>
-
-
-
-
-
-
-            <li class="mi366"><a class="box1">JAVA</a>
-			 <div class="dropdown box2" >
-			<div class="column">
-                <div class="separator">JAVA COMPONENTS</div>
-                <ul>
-                    <li class="mi367"><a href="https://www.e-iceblue.com/Introduce/office-for-java.html">Spire.Office for JAVA</a></li>
-                    <li class="mi367"><a href="https://www.e-iceblue.com/Introduce/doc-for-java.html">Spire.Doc for JAVA</a></li>
-                    <li class="mi934"><a href="https://www.e-iceblue.com/Introduce/xls-for-java.html">Spire.XLS for Java</a></li>
-                    <li class="mi367"><a href="https://www.e-iceblue.com/Introduce/pdf-for-java.html">Spire.PDF for JAVA</a></li>
-                    <li class="mi367"><a href="https://www.e-iceblue.com/Introduce/barcode-for-java.html">Spire.Barcode for JAVA</a></li>
-                    <li class="mi367"><a href="https://www.e-iceblue.com/Introduce/presentation-for-java.html">Spire.Presentation for Java</a></li>
-
-                </ul>
-                </div>
-                <div class="column right">
-                    <div class="separator">FREE PRODUCTS</div>
-                    <ul>
-                        <li class="mi367"><a href="https://www.e-iceblue.com/Introduce/free-office-for-java.html">Free Spire.Office for JAVA</a></li>
-                        <li class="mi367"><a href="https://www.e-iceblue.com/Introduce/free-doc-for-java.html">Free Spire.Doc for JAVA</a></li>
-                        <li class="mi934"><a href="https://www.e-iceblue.com/Introduce/xls-for-java.html">Spire.XLS for Java</a></li>
-                        <li class="mi367"><a href="https://www.e-iceblue.com/Introduce/free-pdf-for-java.html">Free Spire.PDF for JAVA</a></li>
-                        <li class="mi367"><a href="https://www.e-iceblue.com/Introduce/free-barcode-for-java.html">Free Spire.Barcode for JAVA</a></li>
-                        <li class="mi367"><a href="https://www.e-iceblue.com/Introduce/free-presentation-for-java.html">Free Spire.Presentation for Java</a></li>
-
-                    </ul>
-				</div>
-            </div>
-            </li>
-
-
-            <li class="mi212">
-                <a class="box1">Android</a>
-                <div class="dropdown box2" >
-                    <div class="column">
-                        <div class="separator">Android APIS</div>
-                        <ul>
-                            <li class="mi1003"><a href="https://www.e-iceblue.com/Introduce/office-for-android-via-java.html">Spire.Office for Android via Java</a></li>
-                            <li class="mi995"><a href="https://www.e-iceblue.com/Introduce/doc-for-android-via-java.html">Spire.Doc for Android via Java</a></li>
-                            <li class="mi991"><a href="https://www.e-iceblue.com/Introduce/xls-for-android-via-java.html">Spire.XLS for Android via Java</a></li>
-                            <li class="mi1000"><a href="https://www.e-iceblue.com/Introduce/presentation-for-android-via-java.html">Spire.Presentation for Android via Java</a></li>
-                            <li class="mi957"><a href="https://www.e-iceblue.com/Introduce/pdf-for-android-via-java.html">Spire.PDF for Android via Java</a></li>
-                        </ul>
-                    </div>
-
-                    <div class="column right">
-
-                        <div class="separator">Free Products</div>
-                        <ul>
-                            <li class="mi1006"><a href="https://www.e-iceblue.com/Introduce/free-office-for-android-via-java.html">Free Spire.Office for Android via Java</a></li>
-                            <li class="mi1002"><a href="https://www.e-iceblue.com/Introduce/free-doc-for-android-via-java.html">Free Spire.Doc for Android via Java</a></li>
-                            <li class="mi994"><a href="https://www.e-iceblue.com/Introduce/free-XLS-for-android-via-java.html">Free Spire.XLS for Android via Java</a></li>
-                            <li class="mi1001"><a href="https://www.e-iceblue.com/Introduce/free-presentation-for-android-via-java.html">Free Spire.Presentation for Android via Java</a></li>
-                            <li class="mi958"><a href="https://www.e-iceblue.com/Introduce/free-pdf-for-android-via-java.html">Free Spire.PDF for Android via Java</a></li>
-                        </ul>
-
-                    </div>
-
-
-                </div>
-            </li>
-
 
 
 
             <li class="mi214"><a class="box1">Purchase</a>
-			<div class="dropdown box2" >
-			<div class="column">
-                <ul>
-                    <li class="mi197"><a href="https://www.e-iceblue.com/Download/product-list.html">Order Online</a></li>
-                    <li class="mi219"><a href="https://www.e-iceblue.com/Download/product-list.html">Download Centre</a></li>
-                    <li class="mi295"><a href="https://www.e-iceblue.com/Misc/purchase-policies.html">Purchase Policies</a></li>
-                    <li class="mi296"><a href="https://www.e-iceblue.com/Tutorials/Licensing/Renew-Subcription.html">Renewal Policies</a></li>
-                    <li class="mi326"><a href="https://www.e-iceblue.com/Misc/find.html">Find A Reseller</a></li>
-                    <li class="mi293"><a href="https://www.e-iceblue.com/Misc/purchase-faqs.html">Purchase FAQS</a></li>
-                    <li class="mi147"><a href="https://www.e-iceblue.com/Misc/support-faqs.html">Support FAQs</a></li>
-                    <li class="mi217"><a href="https://www.e-iceblue.com/Tutorials/Licensing/Licensing.html">How to Apply License</a></li>
-                    <li class="mi291"><a href="https://www.e-iceblue.com/Tutorials/Licensing/License-Agreement.html">License Agreement</a></li>
-                    <li class="mi291"><a href="https://www.e-iceblue.com/privacypolicy.html">Privacy Policy</a></li>
-                </ul>
-				</div>
-				</div>
+
             </li>
 
 
-            <li class="mi216"><a class="box1">Support</a>
-			<div class="dropdown box2" >
-				<div class="column">
-				
-				  <div class="separator">Sample Center</div>
+            <li class="mi216">
+                <a class="box1">Support</a>
 
-
-                    <ul>
-                        <li class="mi315"><a href="https://www.e-iceblue.com/Tutorials.html">Tutorials</a></li>
-                        <li class="mi141"><a href="https://www.e-iceblue.com/forum">Forum</a></li>
-                        <li class="mi335"><a href="https://www.e-iceblue.com/LiveDemo.html">Live Demo</a></li>
-                        <li class="mi314"><a href="https://www.e-iceblue.com/Misc/customized-demo.html">Customized Demo</a></li>
-                        <li class="mi379"><a href="https://eiceblue.github.io">Code Samples</a></li>
-                    </ul>
-
-				</div>
-				<div class="column right">
-				 <div class="separator">Program Guide</div>
-
-
-                    <ul>
-                        <li class="mi239"><a href="https://www.e-iceblue.com/Tutorials/Spire.Doc/Spire.Doc-Program-Guide/Spire.Doc-Program-Guide-Content.html">Spire.Doc for .NET</a></li>
-                        <li class="mi912"><a href="https://www.e-iceblue.com/Tutorials/Java/Spire.Doc-for-Java/Program-Guide/Spire.Doc-Program-Guide-Content-for-Java.html">Spire.Doc for Java</a></li>
-                        <li class="mi238"><a href="https://www.e-iceblue.com/Tutorials/Spire.XLS/Spire.XLS-Program-Guide/Spire.XLS-Program-Guide-Content.html">Spire.XLS for .NET</a></li>
-                        <li class="mi954"><a href="https://www.e-iceblue.com/Tutorials/Java/Spire.XLS-for-Java/Program-Guide/Spire.XLS-Program-Guide-Content-for-Java.html">Spire.XLS for Java</a></li>
-                        <li class="mi332"><a href="https://www.e-iceblue.com/Tutorials/Spire.Presentation/Program-Guide/Spire.Presentation-Program-Guide-Content.html">Spire.Presentation for .NET</a></li>
-                        <li class="mi889"><a href="https://www.e-iceblue.com/Tutorials/Java/Spire.Presentation-for-Java/Program-Guide/Spire.Presentation-Program-Guide-Content-for-Java.html">Spire.Presentation for Java</a></li>
-                        <li class="mi240"><a href="https://www.e-iceblue.com/Tutorials/Spire.PDF/Spire.PDF-Program-Guide/Spire.PDF-Program-Guide-Content.html">Spire.PDF for .NET</a></li>
-                        <li class="mi866"><a href="https://www.e-iceblue.com/Tutorials/JAVA/Spire.PDF-for-JAVA/Program-Guide/Spire.PDF-Program-Guide-Content-for-JAVA.html">Spire.PDF for Java</a></li>
-                        <li class="mi241"><a href="https://www.e-iceblue.com/Tutorials/Spire.DataExport/Spire.DataExport-Program-Guide/Spire.DataExport-Program-Guide-Content.html">Spire.DataExport for .NET</a></li>
-                    </ul>
-
-				</div>
-				</div>
             </li>
+
+
+
+
+            <li class="mi315"><a class="box1">Tutorials</a>
+
+            </li>
+
             <li class="mi218"><a class="box1">Corporation</a>
-			 <div class="dropdown box2" >
-			<div class="column">
-			
-                <ul>
-                    <li class="mi142"><a href="https://www.e-iceblue.com/Misc/about-us.html">About Us</a></li>
-                    <li class="mi220"><a href="https://www.e-iceblue.com/Misc/maillist.html">Contact Us</a></li>
-                    <li class="mi327"><a href="https://www.e-iceblue.com/Misc/partner.html">Partner</a></li>
-                    <li class="mi146"><a href="https://www.e-iceblue.com/Misc/reseller.html">Become Our Reseller</a></li>
-                    <li class="mi292"><a href="https://www.e-iceblue.com/Misc/affiliate.html">Affiliate</a></li>
-                    <li class="mi143"><a href="https://www.e-iceblue.com/Misc/our-service.html">Our Service</a></li>
-                    <li class="mi144"><a href="https://www.e-iceblue.com/Misc/our-customers.html">Our Customers</a></li>
-                    <li class="mi336"><a href="https://www.e-iceblue.com/Misc/reviews.html">Reviews</a></li>
-                </ul>
-				</div>
-				</div>
+
             </li>
+
+
             <li class="icon user login">
                 <a title="Login/Register" href="https://www.e-iceblue.com/login.html" userInfoUrl="/View-your-account-details.html"
                    userLogoutUrl="/index.php?option=com_myuser&amp;task=logout"><span>Login/Register</span></a>
@@ -298,7 +82,8 @@
                     </li>
                 </ul>
             </li>
-            <p><a href="https://www.e-iceblue.cn/" target="_blank">ZH-CN</a></p></ul>
+
+        </ul>
         
     </div>
 </div>
@@ -323,7 +108,7 @@
                                
                                     <div class="demoimage"><!--anner image --></div>
                                    
-                                </div>
+
                             </li>
                         </ul>
                     </div>
@@ -332,7 +117,7 @@
             </div>
         </div>
     </div>
-</div>
+    </div>
 <div id="page-body">
 
 
@@ -344,6 +129,8 @@
 
                 <li class="active">.NET</li>
                 <li>Java</li>
+                <li>C++</li>
+                <li>Python</li>
 
             </div>
             </div>
@@ -462,7 +249,6 @@
                 <!--java-->
                 <span class="d2" style="display: none;">
 
-           
              <div class="content_git">
                 <fieldset style="width: 348px; height: 237px;">
                     
@@ -499,14 +285,9 @@
                 </fieldset>
             </div>
 			
-			
-			
-			
-			
-			
 
 
-                                <div class="content_git">
+            <div class="content_git">
                 <fieldset style="width: 348px; height: 237px;">
 
                     <div class="content_ppt_1">Spire.XLS for Java</div>
@@ -519,7 +300,7 @@
                 </fieldset>
             </div>
 
-                                <div class="content_git">
+            <div class="content_git">
                 <fieldset style="width: 348px; height: 237px;">
 
                     <div class="content_ppt_1">
@@ -575,6 +356,160 @@
             </div>
 
                     </span>
+
+                <span class="d3" style="display: none;">
+
+                <div class="content_git">
+                    <fieldset style="width: 348px; height: 237px;">
+
+                        <div class="content_ppt_1">Spire.Office for C++</div>
+                        <div class="content_ppt_2">C++ API to operate Word, PowerPoint,</div>
+                        <div class="content_ppt_3">PDF & XLS documents</div>
+                        <div class="content_ppt_4">
+                            <a href="https://www.e-iceblue.com/Introduce/office-for-CPP.html">
+                                <button type="button" class="content_button content_button_ppt">
+                                View Samples
+                                </button>
+                            </a>
+                        </div>
+                    </fieldset>
+                </div>
+
+                <div class="content_git">
+                    <fieldset style="width: 348px; height: 237px;">
+
+                        <div class="content_ppt_1">Spire.Doc for C++</div>
+                        <div class="content_ppt_2">C++ Word API to Create,</div>
+                        <div class="content_ppt_3">Modify, Convert Word Files</div>
+                        <div class="content_ppt_4">
+                            <a href="https://github.com/eiceblue/Spire.Doc-for-C-">
+                                <button type="button" class="content_button content_button_PDF">
+                                View Samples
+                                </button>
+                            </a>
+                        </div>
+                    </fieldset>
+                </div>
+
+                <div class="content_git">
+                    <fieldset style="width: 348px; height: 237px;">
+
+                        <div class="content_ppt_1">Spire.XLS for C++</div>
+                        <div class="content_ppt_2">C++ Excel API to Create, Edit,</div>
+                        <div class="content_ppt_3">Convert Excel Files</div>
+                        <div class="content_ppt_4">
+                            <a href="https://github.com/eiceblue/Spire.XLS-for-C-">
+                                <button type="button" class="content_button content_button_Excel">
+                                View Samples
+                                </button>
+                            </a>
+                        </div>
+                    </fieldset>
+                </div>
+
+                <div class="content_git">
+                    <fieldset style="width: 348px; height: 237px;">
+
+                        <div class="content_ppt_1">Spire.PDF for C++</div>
+                        <div class="content_ppt_2">C++ PDF API to Create, Read, Edit,</div>
+                        <div class="content_ppt_3">Extract and Convert PDF Files</div>
+                        <div class="content_ppt_4">
+                            <a href="https://github.com/eiceblue/Spire.PDF-for-C-">
+                                <button type="button" class="content_button content_button_bc">
+                                View Samples
+                                </button>
+                            </a>
+                        </div>
+                    </fieldset>
+                </div>
+
+
+                <div class="content_git">
+                    <fieldset style="width: 348px; height: 237px;">
+
+                        <div class="content_ppt_1">Spire.Presentation for C++</div>
+                        <div class="content_ppt_2">Create, Read, Write, Convert</div>
+                        <div class="content_ppt_3">PowerPoint Documents</div>
+                        <div class="content_ppt_4">
+                            <a href="https://github.com/eiceblue/Spire.Presentation-for-C-">
+                                <button type="button" class="content_button content_button_Word">
+                                View Samples
+                                </button>
+                            </a>
+                        </div>
+                    </fieldset>
+                </div>
+
+                </span>
+
+                <span class="d4" style="display: none;">
+
+                <div class="content_git">
+                    <fieldset style="width: 348px; height: 237px;">
+
+                        <div class="content_ppt_1">Spire.Doc for Python</div>
+                        <div class="content_ppt_2">Python Word API to Create,</div>
+                        <div class="content_ppt_3">Modify, Convert Word Files</div>
+                        <div class="content_ppt_4">
+                            <a href="https://github.com/eiceblue/Spire.Doc-for-Python">
+                                <button type="button" class="content_button content_button_Word">
+                                View Samples
+                                </button>
+                            </a>
+                        </div>
+                    </fieldset>
+                </div>
+
+
+                <div class="content_git">
+                    <fieldset style="width: 348px; height: 237px;">
+
+                        <div class="content_ppt_1">Spire.XLS for Python</div>
+                        <div class="content_ppt_2">Python Excel API to Create, Edit,</div>
+                        <div class="content_ppt_3">Convert Excel Files</div>
+                        <div class="content_ppt_4">
+                            <a href="https://www.e-iceblue.com/Introduce/xls-for-python.html">
+                                <button type="button" class="content_button content_button_em">
+                                View Samples
+                                </button>
+                            </a>
+                        </div>
+                    </fieldset>
+                </div>
+                <div class="content_git">
+                    <fieldset style="width: 348px; height: 237px;">
+
+                        <div class="content_ppt_1">Spire.PDF for Python</div>
+                        <div class="content_ppt_2">Python PDF API to Create, Read, Edit,</div>
+                        <div class="content_ppt_3">Extract and Convert PDF Files</div>
+                        <div class="content_ppt_4">
+                            <a href="https://github.com/eiceblue/Spire.PDF-for-Python">
+                                <button type="button" class="content_button content_button_pdfjava">
+                                View Samples
+                                </button>
+                            </a>
+                        </div>
+                    </fieldset>
+                </div>
+
+                <div class="content_git">
+                    <fieldset style="width: 348px; height: 237px;">
+
+                        <div class="content_ppt_1">Spire.Presentation for Python</div>
+                        <div class="content_ppt_2">Create, Read, Write, Convert</div>
+                        <div class="content_ppt_3">PowerPoint Documents</div>
+                        <div class="content_ppt_4">
+                            <a href="https://www.e-iceblue.com/Introduce/presentation-for-python.html">
+                                <button type="button" class="content_button content_button_pptjava">
+                                View Samples
+                                </button>
+                            </a>
+                        </div>
+                    </fieldset>
+                </div>
+
+
+                    </span>
 		
 		
 		</div>
@@ -604,13 +539,12 @@
 
 
             
-            <div>Copyright &#169; 2021 e-iceblue. All Rights Reserved.</div>
+            <div>Copyright &#169; <span id="now_year_ice" style="color: #D6E4CB;font-size: 10px; line-height: 10px;">20232</span> e-iceblue. All Rights Reserved.</div>
         </div>
         <!-- footer end -->
 
     </div>
 
-</div>
 <noscript>
     <div style="display:inline;">
         <img height="1" width="1" style="border-style:none;" alt="" src="picture/ef144ba564ff42769a42124293e01041.gif"/>
@@ -618,31 +552,6 @@
 </noscript>
 
 </body>
-<script type="text/javascript">
-    var box1 = document.getElementsByClassName('box1');
-    var box2 = document.getElementsByClassName('box2');
-    var timer = null;
-    var len = box1.length;
-    for (var i = 0; i < len; i++) {
-        (function (i) {
-            box1[i].onmouseover = function () {
-                box2[i].style.display = 'block';
-            };
-            box1[i].onmouseout = function () {
-                timer = setTimeout(function () {
-                    box2[i].style.display = 'none';
-                }, 50)
-            };
-            box2[i].onmouseover = function () {
-                clearTimeout(timer);
-                this.style.display = 'block';
-            };
-            box2[i].onmouseout = function () {
-                this.style.display = 'none';
-            }
-        })(i)
-    }
-</script>
 
 <script>
     var content = document.getElementById("content");
@@ -674,5 +583,83 @@
         }
     }
 </script>
+<script type="text/javascript">
+    var isPhone = window.navigator.userAgent.match(/Android|BlackBerry|iPhone|iPad|iPod|Opera Mini|IEMobile/i);
+    if(!isPhone){
+        jQuery('#menu').initDropdownMenu();
+    }
+</script>
+<script>
+    var day2 = new Date();
+    var s2 = day2.getFullYear();
+    console.log(s2);
+    document.getElementById("now_year_ice").innerHTML = s2;
+</script>
+<script>
+    $('#menu .content-boxs').css('top','65px');
+    // alert('222');
+
+    $('#menu').on('mouseenter', '.yyds', function () {
+        // alert('111');
+        $(".dropdown2").css("height","610px");
+        $("#menu .content-box-first").css("display","block");
+        $("#menu .yyds2").css("background-color","#d2d2d2");
+        $(this).css("background-color","#e5e5e5");
+    });
+    $('#menu').on('mousemove', '.yyds', function () {
+        $(".dropdown2").css("height","610px");
+        $("#menu .content-box-first").css("display","block");
+        $("#menu .yyds2").css("background-color","#d2d2d2");
+        $(this).css("background-color","#e5e5e5");
+    });
+
+    $('#menu').on('mouseenter', '.yyds2', function () {
+        $(".dropdown2").css("height","390px");
+        $("#menu .content-box-first").css("display","none");
+        $("#menu .yyds").css("background-color","#d2d2d2");
+        $("#menu .yyds2").css("background-color","#d2d2d2");
+        $(this).css("background-color","#e5e5e5");
+    });
+    $('#menu').on('mousemove', '.yyds2', function () {
+        $(".dropdown2").css("height","390px");
+        $("#menu .content-box-first").css("display","none");
+        $("#menu .yyds").css("background-color","#d2d2d2");
+        $("#menu .yyds2").css("background-color","#d2d2d2");
+        $(this).css("background-color","#e5e5e5");
+    });
+
+
+
+    $('#menu').on('mouseenter', '.tutorials1', function () {
+        // $(".dropdown2").css("height","610px");
+        $("#menu .content-box-first").css("display","block");
+        // $("#menu .yyds2").css("background-color","#d2d2d2");
+        // $(this).css("background-color","#e5e5e5");
+    });
+    $('#menu').on('mousemove', '.tutorials1', function () {
+        // $(".dropdown2").css("height","610px");
+        $("#menu .content-box-first").css("display","block");
+        // $("#menu .yyds2").css("background-color","#d2d2d2");
+        // $(this).css("background-color","#e5e5e5");
+    });
+
+    $('#menu').on('mouseenter', '.tutorials2', function () {
+        // $(".dropdown2").css("height","325px");
+        $("#menu .content-box-first").css("display","none");
+        // $("#menu .yyds").css("background-color","#d2d2d2");
+        // $("#menu .yyds2").css("background-color","#d2d2d2");
+        // $(this).css("background-color","#e5e5e5");
+
+    });
+    $('#menu').on('mousemove', '.tutorials2', function () {
+        // $(".dropdown2").css("height","325px");
+        $("#menu .content-box-first").css("display","none");
+        // $("#menu .yyds").css("background-color","#d2d2d2");
+        // $("#menu .yyds2").css("background-color","#d2d2d2");
+        // $(this).css("background-color","#e5e5e5");
+    });
+</script>
 
 </html>
+
+
