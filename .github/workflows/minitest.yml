@@ -1,0 +1,32 @@
+name: build
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  build:
+    strategy:
+      fail-fast: false
+      matrix:
+        runner: [ubuntu-24.04, ubuntu-24.04-arm]
+    runs-on: ${{ matrix.runner }}
+    steps:
+      - uses: actions/checkout@v4
+
+      # No `cache:` here on purpose, so every run downloads dependencies fresh.
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '21'
+
+      # Shows what the e-iceblue repo returns to a GitHub runner, outside of Maven.
+      - name: Probe e-iceblue repo
+        run: |
+          curl -sS -I https://repo.e-iceblue.com/repository/maven-public/e-iceblue/spire.xls/13.4.1/spire.xls-13.4.1.pom || true
+      - name: Go Offline
+        run: |
+          mvn dependency:go-offline --no-transfer-progress --errors
+      - name: Build
+        run: mvn -B -U -e clean package -DskipTests
